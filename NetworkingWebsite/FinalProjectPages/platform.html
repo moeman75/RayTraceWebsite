@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Networking Assignment</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+<style>
+body{background-color:#ffffff; margin:0px;}
+h1{font-family: lobster, arial; font-size:48px; padding:0px 32px; color:#ffffff;}
+div.top{background-color:#2f2f2f; padding:8px;}
+div.bottom{margin:16px;}
+</style>
+</head>
+<body>
+<div class="top"><h1>Networking and Parallel Final Project - Spring 2017</h1></div>
+<div class="bottom">
+<h2><i>Platform</i></h2>
+<hr />
+&nbsp;&nbsp;&nbsp;&nbsp;
+The project will utilize hardware acceleration through NVIDIA's standard Geforce
+graphics cards. In order for this project to utilize the hardware acceleration
+it will need to be written in the CUDA/C++ langauge and compiled by NVIDIA's 
+CUDA compiler. This aformentioned description applies to the core of the application
+which raytraces a shadow across a three-dimensional object model. There will also be
+an additional application that will display the effects of the lighting render, but
+it will not utilize the performance-enhancing CUDA system. This display application
+could be written difficultly using OpenGL, could be produced using GameMaker: Studio 
+rather easily, or could be skipped since there are other applications available to
+display 3D models. It has not been decided yet at this moment how we wish to proceed
+with a display application since it depends on the unknown quantity of work that we
+will be getting ourselves into.
+<br /><br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+It makes sense to do this type of rendering with a GPU considering how many repetitive
+calculations are made in raytracing. Currently many 3D modeling environments perform
+ray-traces to "bake" lighting to models using the CPU. For very high-detail models this
+operation can take several minutes.
+<br /><br />
+We plan to use NDSU's Titan machine to do our renderings.
+<hr />
+<p><i><b>Author:</b> Buster Schrader</i></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Networking Assignment</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
+<style>
+body{background-color:#ffffff; margin:0px;}
+h1{font-family: lobster, arial; font-size:48px; padding:0px 32px; color:#ffffff;}
+div.top{background-color:#2f2f2f; padding:8px;}
+div.bottom{margin:16px;}
+</style>
+  </head>
+  <body bgcolor=white>
+
+    <div class="top"><h1>Networking and Parallel Final Project Spring 2017</h1></div>
+    <div class="bottom">
+
+    <h2>Background</h2>
+    <hr />
+    <p>Creation of shadowing on 3D models with a high number of polygons is a taxing process on the CPU when done locally.
+    For extremely large models (World Maps, Google Earth Maps, & whatever), the models take a long time to render both shadowing and
+    lighting to the various shapes and sizes of the polygons. Speeding up the process of rendering can be done via the use of parallelization.
+    By using parallelization, instead of ray tracing in a chronological order across vertexes, these vertexes can ray trace in parallel
+    to speed up the process of rendering. This can be applied across multiple applications that are used to create 3D models</p>
+    <img src="images/isoMetric.png" width="75%"/>
+    <ul>
+      <li>Images for shadows are generally used over geometry for shadows because of the benefit it provides to overall performance.</li>
+      <li>Speed of rendering using parallelization versus rendering without it</li>
+    </ul>
+    <p>Example of ray tracing using Barycentric coordinates graphing for the point to point for the shadow creation</p>
+    <img src="images/baryCentric.png" width="75%"/>
+    <hr />
+    <p>Updated: 4 / 18 / 2017</p>
+    <p>Author: <i>Buster Schrader, Grant Moe</i></p>
+    </div>
+  </body>
+</html>
